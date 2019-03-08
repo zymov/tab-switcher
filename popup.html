@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        white-space: nowrap;
+        font-size: 14px;
+        margin: 10px 20px;
+      }
+      .title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+      .cell {
+        padding-bottom: 10px; 
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 10px;
+      }
+      .cell:nth-child(3) {
+        border-bottom: none;
+      }
+      .desc {
+        font-size: 20px;
+      }
+      .shortcut {
+        color: #666;
+        height: 20px;
+        line-height: 20px;
+        font-size: 16px;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">tab switcher</div>
+    <div class="cell">
+        <div class="desc">Switch back to the previously visited tab</div>
+        <div class="shortcut">Windows: Ctrl+Shift+P</div>
+        <div class="shortcut">Mac: Command+Shift+P</div>
+    </div>
+    <div class="cell">
+        <div class="desc">Move 2 tabs forward each time</div>
+        <div class="shortcut">Windows: Ctrl+Shift+2</div>
+        <div class="shortcut">Mac: Command+Shift+2</div>
+    </div>
+  </body>
+</html>

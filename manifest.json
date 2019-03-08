@@ -1,0 +1,32 @@
+{
+  "name": "Tab Switcher",
+  "version": "1.0",
+  "description": "A better switch tab shortcuts",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "commands": {
+    "switch-back": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+P",
+        "mac": "Command+Shift+P"
+      },
+      "description": "switch back to the previously visited tab"
+    },
+    "go-next-2-tab": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+2",
+        "mac": "Command+Shift+2"
+      },
+      "description": "goto next 2 tab"
+    }
+  }
+}
